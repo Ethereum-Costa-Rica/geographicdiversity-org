@@ -125,7 +125,7 @@ function nodewatch_marketshare() {
         const data = yield fetchData(endpoint, rawQuery);
         const heatMap = data.data.getHeatmapData;
         //assign continent
-        saveToFile(heatMap, 'raw/nodewatch_raw.json');
+        // saveToFile(heatMap, 'raw/nodewatch_raw.json');
         const processedData = process_nodewatch_marketshare_data(heatMap);
         const transformedData = transformData(processedData);
         saveToFile(transformedData, 'nodewatch.json');
