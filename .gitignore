@@ -9,4 +9,5 @@ vendor
 .DS_Store
 *.DS_Store
 **/.DS_Store
-/_data/raw/nodewatch_raw.json
+# Ignore raw data directory
+nextjs-clone/app/data/raw/
